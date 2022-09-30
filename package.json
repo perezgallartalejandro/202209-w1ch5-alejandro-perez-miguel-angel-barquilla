@@ -1,0 +1,23 @@
+{
+  "name": "202209-w1ch5-alejandro-perez-miguel-angel-barquilla",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/perezgallartalejandro/202209-w1ch5-alejandro-perez-miguel-angel-barquilla.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/perezgallartalejandro/202209-w1ch5-alejandro-perez-miguel-angel-barquilla/issues"
+  },
+  "homepage": "https://github.com/perezgallartalejandro/202209-w1ch5-alejandro-perez-miguel-angel-barquilla#readme",
+  "devDependencies": {
+    "sass": "^1.55.0"
+  }
+}
