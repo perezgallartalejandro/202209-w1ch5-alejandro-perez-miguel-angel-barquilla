@@ -1,0 +1,26 @@
+{
+  "name": "challenge-fin-de-semana-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass sass/style.scss css/style.css",
+    "sass-watch": "sass sass/style.scss css/style.css --watch",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/perezgallartalejandro/202209-w1ch5-alejandro-perez-miguel-angel-barquilla.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/perezgallartalejandro/202209-w1ch5-alejandro-perez-miguel-angel-barquilla/issues"
+  },
+  "homepage": "https://github.com/perezgallartalejandro/202209-w1ch5-alejandro-perez-miguel-angel-barquilla#readme",
+  "devDependencies": {
+    "sass": "^1.55.0",
+    "husky": "^8.0.0"
+  }
+}
