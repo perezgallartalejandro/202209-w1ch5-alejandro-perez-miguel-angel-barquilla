@@ -54,7 +54,7 @@
 .make-a-booking {
   padding: 10px 30px;
   height: 40px;
-  border: 2px solid lighten(variables.$global-blue, 20%);
+  border: 2px solid variables.$button-border-color;
   border-radius: 40px;
   font-family: variables.$font-family-default;
   font-size: 14px;
@@ -63,10 +63,9 @@
   color: variables.$global-blue;
   background-color: white;
   cursor: pointer;
-  transition: color 0.4s;
+  transition: border-color 0.4s;
 }
 
 .make-a-booking:hover {
-  background-color: lighten(variables.$global-blue, 20%);
-  color: white;
+  border-color: variables.$global-blue;
 }
