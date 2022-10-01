@@ -1,0 +1,26 @@
+@use "variables";
+@use "mixin";
+
+.result-block {
+  display: flex;
+  border: 1px solid red;
+}
+
+.image-product-found {
+  width: 268px;
+  height: 204px;
+  border-radius: 20px;
+}
+
+.stars-vote svg {
+  color: variables.$gloval-pink;
+}
+
+.result-descriptions {
+  &__header {
+    @include mixin.font-header-result-descrition;
+  }
+  &__second-level {
+    @include mixin.result-descriptions-second-level;
+  }
+}

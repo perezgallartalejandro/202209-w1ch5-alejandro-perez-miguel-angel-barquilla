@@ -1,0 +1,15 @@
+@use "variables";
+
+@mixin font-header-result-descrition {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 24px;
+  color: variables.$font-header-result-descrition;
+}
+
+@mixin result-descriptions-second-level {
+  font-family: Poppins;
+  font-weight: 300;
+  font-size: 18px;
+  color: variables.$result-descriptions-second-level;
+}
