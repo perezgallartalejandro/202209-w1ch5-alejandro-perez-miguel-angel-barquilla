@@ -2,14 +2,20 @@
 @use "mixin";
 
 .result-block {
-  padding: 20px;
   border: 1px solid red;
+  padding: 10px 20px;
+
+  .product-found:last-child {
+    border: none;
+  }
 }
 
 .product-found {
   display: flex;
+  padding: 40px 0;
   flex-direction: column;
   align-items: flex-start;
+  border-bottom: 1px solid #b0b0b0;
   gap: 18px;
 }
 
@@ -51,21 +57,10 @@
   }
 }
 
-.make-a-booking {
-  padding: 10px 30px;
-  height: 40px;
-  border: 2px solid variables.$button-border-color;
-  border-radius: 40px;
-  font-family: variables.$font-family-default;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 0;
-  color: variables.$global-blue;
-  background-color: white;
-  cursor: pointer;
-  transition: border-color 0.4s;
+.main-button--make-a-booking {
+  @include mixin.main-button;
 }
 
-.make-a-booking:hover {
+.main-button--make-a-booking:hover {
   border-color: variables.$global-blue;
 }
