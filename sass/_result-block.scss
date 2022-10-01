@@ -9,7 +9,8 @@
 .product-found {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  align-items: flex-start;
+  gap: 18px;
 }
 
 .image-product-found {
@@ -32,6 +33,8 @@
 }
 
 .pointer-map-link {
+  margin-top: 15px;
+
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -40,10 +43,30 @@
   & svg {
     width: 20px;
     height: 20px;
-    color: lighten(variables.$global-blue, $amount: 0);
+    color: lighten(variables.$global-blue, 30%);
   }
 
   &__link {
     @include mixin.pointer-map-link;
   }
+}
+
+.make-a-booking {
+  padding: 10px 30px;
+  height: 40px;
+  border: 2px solid lighten(variables.$global-blue, 20%);
+  border-radius: 40px;
+  font-family: variables.$font-family-default;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 0;
+  color: variables.$global-blue;
+  background-color: white;
+  cursor: pointer;
+  transition: color 0.4s;
+}
+
+.make-a-booking:hover {
+  background-color: lighten(variables.$global-blue, 20%);
+  color: white;
 }
