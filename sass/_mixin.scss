@@ -4,12 +4,20 @@
   font-family: Poppins;
   font-weight: 600;
   font-size: 24px;
-  color: variables.$font-header-result-descrition;
+  color: variables.$global-blue;
 }
 
 @mixin result-descriptions-second-level {
   font-family: Poppins;
   font-weight: 300;
   font-size: 18px;
-  color: variables.$result-descriptions-second-level;
+  color: variables.$global-grey;
+}
+
+@mixin pointer-map-link {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 22px;
+  color: variables.$global-blue;
+  text-decoration: none;
 }

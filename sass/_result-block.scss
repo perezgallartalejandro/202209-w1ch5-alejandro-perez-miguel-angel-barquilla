@@ -2,8 +2,14 @@
 @use "mixin";
 
 .result-block {
-  display: flex;
+  padding: 20px;
   border: 1px solid red;
+}
+
+.product-found {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .image-product-found {
@@ -13,7 +19,7 @@
 }
 
 .stars-vote svg {
-  color: variables.$gloval-pink;
+  color: variables.$global-pink;
 }
 
 .result-descriptions {
@@ -22,5 +28,22 @@
   }
   &__second-level {
     @include mixin.result-descriptions-second-level;
+  }
+}
+
+.pointer-map-link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6px;
+
+  & svg {
+    width: 20px;
+    height: 20px;
+    color: lighten(variables.$global-blue, $amount: 0);
+  }
+
+  &__link {
+    @include mixin.pointer-map-link;
   }
 }
