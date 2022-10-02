@@ -1,0 +1,77 @@
+@use "variables";
+@use "notice-box";
+
+.title-found {
+  margin-left: 20px;
+  font-family: variables.$font-family-default;
+  font-size: 28px;
+}
+
+.notices-buttons-contact-block {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.open-more-line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  cursor: pointer;
+
+  &__left-line,
+  &__right-line {
+    flex: 2;
+    border-bottom: 1px solid variables.$light-grey;
+    height: 0;
+  }
+  &__center-circle {
+    flex: 1;
+    color: variables.$global-blue;
+  }
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+  position: relative;
+  border-radius: 40px;
+  background-color: variables.$base-contact-box-opacity;
+  height: 463px;
+
+  &__estatement {
+    z-index: 3;
+    color: #f3efff;
+    text-align: center;
+    font-family: variables.$font-family-default;
+    font-size: 48px;
+    line-height: 50px;
+  }
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+    background-color: variables.$base-contact-box-opacity;
+    position: absolute;
+    z-index: 1;
+  }
+
+  &::after {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    content: "";
+    clip-path: polygon(100% 0, 50% 100%, 100% 100%);
+    background-color: variables.$base-contact-box-opacity;
+    position: absolute;
+    z-index: 1;
+  }
+}

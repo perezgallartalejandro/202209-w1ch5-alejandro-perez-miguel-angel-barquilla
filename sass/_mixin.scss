@@ -21,18 +21,3 @@
   color: variables.$global-blue;
   text-decoration: none;
 }
-
-@mixin main-button {
-  padding: 10px 30px;
-  height: 40px;
-  border: 2px solid variables.$button-border-color;
-  border-radius: 40px;
-  font-family: variables.$font-family-default;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 0;
-  color: variables.$global-blue;
-  background-color: white;
-  cursor: pointer;
-  transition: border-color 0.4s;
-}
