@@ -1,6 +1,12 @@
 @use "variables";
 @use "notice-box";
 
+.title-found {
+  margin-left: 20px;
+  font-family: variables.$font-family-default;
+  font-size: 28px;
+}
+
 .notices-buttons-contact-block {
   display: flex;
   flex-direction: column;
