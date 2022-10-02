@@ -1,0 +1,25 @@
+@use "variables";
+
+.notices-buttons-contact-block {
+  color: red;
+}
+
+.open-more-line {
+  display: flex;
+  flex-direction: row;
+  padding: 0 20px;
+  align-items: center;
+  gap: 30px;
+  cursor: pointer;
+
+  &__left-line,
+  &__right-line {
+    flex: 2;
+    border-bottom: 1px solid variables.$light-grey;
+    height: 0;
+  }
+  &__center-circle {
+    flex: 1;
+    color: variables.$global-blue;
+  }
+}

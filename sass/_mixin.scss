@@ -25,7 +25,7 @@
 @mixin main-button {
   padding: 10px 30px;
   height: 40px;
-  border: 2px solid variables.$button-border-color;
+  border: 2px solid variables.$light-grey;
   border-radius: 40px;
   font-family: variables.$font-family-default;
   font-size: 14px;

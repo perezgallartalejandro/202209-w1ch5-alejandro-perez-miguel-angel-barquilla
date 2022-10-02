@@ -2,7 +2,6 @@
 @use "mixin";
 
 .result-block {
-  border: 1px solid red;
   padding: 10px 20px;
 
   .product-found:last-child {
@@ -15,7 +14,7 @@
   padding: 40px 0;
   flex-direction: column;
   align-items: flex-start;
-  border-bottom: 1px solid #b0b0b0;
+  border-bottom: 1px solid variables.$light-grey;
   gap: 18px;
 }
 
