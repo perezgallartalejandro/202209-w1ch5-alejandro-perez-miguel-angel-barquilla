@@ -1,0 +1,66 @@
+@use "variables";
+@use "mixin";
+
+.result-block {
+  border: 1px solid red;
+  padding: 10px 20px;
+
+  .product-found:last-child {
+    border: none;
+  }
+}
+
+.product-found {
+  display: flex;
+  padding: 40px 0;
+  flex-direction: column;
+  align-items: flex-start;
+  border-bottom: 1px solid #b0b0b0;
+  gap: 18px;
+}
+
+.image-product-found {
+  width: 268px;
+  height: 204px;
+  border-radius: 20px;
+}
+
+.stars-vote svg {
+  color: variables.$global-pink;
+}
+
+.result-descriptions {
+  &__header {
+    @include mixin.font-header-result-descrition;
+  }
+  &__second-level {
+    @include mixin.result-descriptions-second-level;
+  }
+}
+
+.pointer-map-link {
+  margin-top: 15px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6px;
+
+  & svg {
+    width: 20px;
+    height: 20px;
+    color: lighten(variables.$global-blue, 30%);
+  }
+
+  &__link {
+    @include mixin.pointer-map-link;
+  }
+}
+
+.main-button--make-a-booking {
+  @include mixin.main-button;
+}
+
+.main-button--make-a-booking:hover {
+  border-color: variables.$global-blue;
+}
