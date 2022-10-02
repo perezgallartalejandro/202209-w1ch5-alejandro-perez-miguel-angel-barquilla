@@ -1,77 +1,58 @@
-
-@use "reset";
-@use "result-block";
-@use "middle-area";
-
-main {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-
-  padding: 0 20px 20px 20px;
-
-$header-color:#5F2EEA;
-$button-search-color:#ED2E7E;
-$background-second-search-color:#2A00A1;
-$border-bottom-color:#E7DFFC;
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
-
-
-*{
-  margin:0 auto;
-  box-sizing: border-box; 
-  font-family: 'Roboto', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
-footer{
+footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   color: rgb(48, 48, 48);
 }
 
-.footer__title{
-  color: $header-color;
+.footer__title {
+  color: #5F2EEA;
   font-weight: bold;
   margin-bottom: 20 px;
 }
 
-.address__contact--title{
+.address__contact--title {
   padding: 15px;
-  color: $header-color;
+  color: #5F2EEA;
   font-weight: bold;
 }
 
-.header{
-  color: $header-color;
+.header {
+  color: #5F2EEA;
   padding: 25px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 2px solid $border-bottom-color;
+  border-bottom: 2px solid #E7DFFC;
   font-weight: bolder;
 }
 
-.header__title{
+.header__title {
   cursor: pointer;
 }
 
-.search__block{
+.search__block {
   padding: 25px 0 25px 0;
   display: flex;
   flex-direction: column;
-  border-bottom: 3px solid $border-bottom-color;
+  border-bottom: 3px solid #E7DFFC;
 }
 
-.search__input--textbox{
+.search__input--textbox {
   padding-left: 15px;
   border-radius: 5px;
   margin-top: 10px;
   cursor: pointer;
 }
 
-.second-search__input--textbox{
+.second-search__input--textbox {
   padding-left: 15px;
   border: none;
   border-radius: 5px;
@@ -79,7 +60,7 @@ footer{
   cursor: pointer;
 }
 
-.second-search__block{
+.second-search__block {
   width: fit-content;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -87,22 +68,22 @@ footer{
   padding-left: 15px;
   padding-right: 15px;
   color: white;
-  background-color: $background-second-search-color;
+  background-color: #2A00A1;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
 }
 
-.second-search__block--title{
+.second-search__block--title {
   margin-top: 15px;
 }
 
-.button__search{
+.button__search {
   font-size: 1rem;
   font-weight: bold;
   margin-top: 10px;
-  color:white;
-  background-color: $button-search-color;
+  color: white;
+  background-color: #ED2E7E;
   border: none;
   border-radius: 15px;
   height: 30px;
@@ -110,16 +91,17 @@ footer{
   cursor: pointer;
 }
 
-.second-search__block--title{
+.second-search__block--title {
   display: flex;
 }
 
-.second-search__text-input{
+.second-search__text-input {
   display: flex;
   flex-direction: column;
 }
 
-label{
+label {
   margin-top: 10px;
-
 }
+
+/*# sourceMappingURL=style.css.map */
