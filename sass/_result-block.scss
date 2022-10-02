@@ -1,9 +1,8 @@
 @use "variables";
 @use "mixin";
+@use "buttons";
 
 .result-block {
-  padding: 10px 20px;
-
   .product-found:last-child {
     border: none;
   }
@@ -54,12 +53,4 @@
   &__link {
     @include mixin.pointer-map-link;
   }
-}
-
-.main-button--make-a-booking {
-  @include mixin.main-button;
-}
-
-.main-button--make-a-booking:hover {
-  border-color: variables.$global-blue;
 }

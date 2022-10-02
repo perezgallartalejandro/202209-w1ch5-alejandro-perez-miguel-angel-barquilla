@@ -1,3 +1,11 @@
 @use "reset";
 @use "result-block";
 @use "middle-area";
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  padding: 20px 20px;
+}
