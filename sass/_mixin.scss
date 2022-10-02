@@ -1,0 +1,38 @@
+@use "variables";
+
+@mixin font-header-result-descrition {
+  font-family: variables.$font-family-default;
+  font-weight: 600;
+  font-size: 24px;
+  color: variables.$global-blue;
+}
+
+@mixin result-descriptions-second-level {
+  font-family: variables.$font-family-default;
+  font-weight: 300;
+  font-size: 18px;
+  color: variables.$global-grey;
+}
+
+@mixin pointer-map-link {
+  font-family: variables.$font-family-default;
+  font-weight: 600;
+  font-size: 22px;
+  color: variables.$global-blue;
+  text-decoration: none;
+}
+
+@mixin main-button {
+  padding: 10px 30px;
+  height: 40px;
+  border: 2px solid variables.$button-border-color;
+  border-radius: 40px;
+  font-family: variables.$font-family-default;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 0;
+  color: variables.$global-blue;
+  background-color: white;
+  cursor: pointer;
+  transition: border-color 0.4s;
+}
